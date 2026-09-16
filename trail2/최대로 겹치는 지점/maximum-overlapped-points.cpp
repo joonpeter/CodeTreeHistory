@@ -15,7 +15,7 @@ int main() {
 
     // Please write your code here.
 
-    vector<pair<int, int>>arr;
+    vector<pair<int, int>> arr;
     for(int i=0;i<n;i++){
         arr.push_back({x1[i], x2[i]});
     }
