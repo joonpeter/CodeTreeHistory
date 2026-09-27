@@ -22,11 +22,11 @@ int main() {
     }
 
     static int arr[201][201]={0,};
-    for(int i=1;i<n+1;i++){
+    for(int i=0;i<n;i++){
         for(int x=x1[i];x<x2[i];x++){
             for(int y=y1[i];y<y2[i];y++){
-                if(i%2==1)  arr[x][y]=1;
-                if(i%2==0)  arr[x][y]=2;
+                if(i%2==0)  arr[x][y]=1;
+                if(i%2==1)  arr[x][y]=2;
             }
         }
     }
@@ -34,7 +34,7 @@ int main() {
     int cnt=0;
     for(int i=0;i<201;i++){
         for(int j=0;j<201;j++){
-            if(arr[i][j]==1) cnt++;
+            if(arr[i][j]==2) cnt++;
         }
     }
 
