@@ -19,10 +19,10 @@ int main() {
         if(arr[i]==arr[i-1]){
             continue_cnt++;
         }else{
-            if(continue_max<continue_cnt){
-                continue_max=continue_cnt;
-            }
             continue_cnt=1;
+        }
+        if(continue_max<continue_cnt){
+            continue_max=continue_cnt;
         }
     }
 
