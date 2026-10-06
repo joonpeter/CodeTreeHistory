@@ -13,30 +13,21 @@ int main() {
     
     // Please write your code here.
 
-    int cnt=1;
+    int cnt=1,maxcnt=1;
 
-    int maxCnt = 1;
-
-    for (int i = 1; i < N; i++) {
-
+    for(int i=0;i<N;i++){
         if ((arr[i] > 0 && arr[i - 1] > 0) ||
             (arr[i] < 0 && arr[i - 1] < 0)) {
             cnt++;
-        }
-        else {
-            cnt = 1;
+        }else{
+            cnt=1;
         }
 
-        if (cnt > maxCnt) {
-            maxCnt = cnt;
+        if(cnt>maxcnt){
+            maxcnt=cnt;
         }
     }
-
-    cout << maxCnt;
-
-    return 0;
-    
-  
+    cout<<maxcnt;  
 
     return 0;
 }
